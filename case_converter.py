@@ -21,21 +21,7 @@ def detect_cases(s):
         else:
             return "camel"
 
-def sort_by_case(variables):
-    result = {
-    "snake": [],
-    "kebab": [],
-    "pascal": [],
-    "camel": [],
-    "ambiguous": []  
-    }
 
-    variables = variables.split()
-    for var in variables:
-        case = detect_cases(var)
-        result[case].append(var)
-
-    return result
 
 def get_user_choice(userInput):
     choices = ["snake", "kebab", "pascal", "camel"]
@@ -48,20 +34,21 @@ def convert_case(choice, variables):
     result_list = []
     ambiguous_result_list = []
     choice = get_user_choice(choice)
-    found_cases = sort_by_case(variables)
-    for key, value in found_cases.items():
-        for current_value in value:
-            match key:
-                case "snake":
-                    result_list.append(convert_from_snake_case(current_value, choice))
-                case "kebab":
-                    result_list.append(convert_from_kebab_case(current_value, choice))
-                case "pascal":
-                    result_list.append(convert_from_pascal_case(current_value, choice))
-                case "camel":
-                    result_list.append(convert_from_camel_case(current_value, choice))
-                case "ambiguous": 
-                    ambiguous_result_list.append(current_value)
+    
+    for current_value in variables.split():
+        key = detect_cases(current_value)
+        match key:
+            case "snake":
+                result_list.append(convert_from_snake_case(current_value, choice))
+            case "kebab":
+                result_list.append(convert_from_kebab_case(current_value, choice))
+            case "pascal":
+                result_list.append(convert_from_pascal_case(current_value, choice))
+            case "camel":
+                result_list.append(convert_from_camel_case(current_value, choice))
+            case "ambiguous": 
+                ambiguous_result_list.append(current_value)
+    
     result_string = "\n".join(result_list)
     ambiguous_result_string = "\n".join(ambiguous_result_list)
     return result_string, ambiguous_result_string
