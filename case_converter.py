@@ -1,12 +1,6 @@
 
-from rapidfuzz import fuzz, process
-import argparse, re, pyperclip
-
-
-
-"""parser = argparse.ArgumentParser(description = "Convert variable names between cases")
-parser.add_argument("variables", nargs= "+", help = "Variable names to convert")
-args = parser.parse_args()"""
+from rapidfuzz import process
+import re, pyperclip
 
 
 
