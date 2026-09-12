@@ -1,5 +1,13 @@
 <h1 align="center"> Variable Case Conversion</h1>
 
+<br>
+<br>
+<p1>This project converts a string of variables to a desired case convention.</p1>
+<br>
+<br>
+<br>
+
+
 <h2>Requirements</h2>
 <ul>
   <li>Python 3.10+ (uses <code>match</code>/<code>case</code> syntax, which requires 3.10 or later)</li>
@@ -11,21 +19,31 @@
 
 <h2>Usage:</h2>
 
-<ul>
-  <li>Enter the casing convention to convert <b><i>to.</i></b></li>
-  <code>Example inputs:</code>
-    <ul>
-      <li>camel</li>
-      <li>pascal</li>
-      <li>snake</li>
-    </ul>
+<ol>
+  <li><b>Enter the casing convention to convert <b><i>to.</i></b></b></li>
+  <h3>Example inputs:</h3>
+  <ul>
+    <li>"camel"</li>
+    <li>"pascal"</li>
+    <li>"kebab"</li>
+  </ul>
+
+<br>
+
+ <li><b>Enter a single string of variables delimited by any number of whitespaces.</b></li>
+ <h3>Example inputs:</h3>
+ <ul>
+    <li>"camelCase might-be-kebab-case"</li>
+    <li>"PascalCase &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AverageProfessors HiImAVariable"</li>
+    <li>"snake_case CertainlyPascalCase"</li>
+  </ul>
+</ol>
   
-<br>
-<br>
 
-
+  
+  <h2 align="center">Example Cases</h2>
     
-<table>
+<table align="center">
   <thead>
     <tr>
       <th>Input</th>
@@ -35,20 +53,25 @@
   </thead>
   <tbody>
     <tr>
-      <td><code>"camelCase might-be-kebab-case"</code></td>
-      <td>camel</td>
-      <td><code>mightBeKebabCase
-camelCase</code></td>
+      <td align="center"><code>"camelCase might-be-kebab-case"</code></td>
+      <td align="center">camel</td>
+      <td align="center"><code>camelCase
+mightBeKebabCase</code></td>
     </tr>
     <tr>
-      <td><code>"PascalCase &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AverageProfessors"</code></td>
-      <td>snake</td>
-      <td><code>my_variable_name</code></td>
+      <td align="center"><code>"PascalCase &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AverageProfessors HiImAVariable"</code></td>
+      <td align="center">snake</td>
+      <td align="center"><code>pascal_case
+average_professors
+hi_im_a_variable</code></td>
     </tr>
     <tr>
-      <td><code>snake_case CertainlyPascalCase</code></td>
-      <td>pascal</td>
-      <td><code>MyVariableName</code></td>
+      <td align="center"><code>snake_case CertainlyPascalCase</code></td>
+      <td align="center">pascal</td>
+      <td align="center"><code>SnakeCase
+CertainlyPascalCase</code></td>
     </tr>
   </tbody>
 </table>
+
+
