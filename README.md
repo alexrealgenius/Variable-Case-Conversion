@@ -7,9 +7,7 @@
 <br>
 <br>
 
-
-https://github.com/user-attachments/assets/471202cb-4699-4c95-b148-f4d911a9b371
-
+<video src="https://github.com/user-attachments/assets/4ed5d916-9208-4f9d-bfff-0c93ebb2b3af" autoplay loop muted></video>
 
 
 <h2>Requirements</h2>
