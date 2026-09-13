@@ -27,7 +27,7 @@ def get_user_choice(userInput):
     choices = ["snake", "kebab", "pascal", "camel"]
 
     result = process.extractOne(userInput, choices)
-    result = result[0]
+    result = result[0] 
     return (result)
 
 def convert_case(choice, variables):
@@ -154,23 +154,23 @@ def convert_from_pascal_case(input, requested_case):
 
 user_made_choice = False
 while not(user_made_choice):
-    entered_case_choice = input("\n---------\nEnter a casing convention you'd like to convert to. Currently supported are: \nsnake\nkebab\npascal\ncamel\n---------\n")
+    entered_case_choice = input("\n---------------------\nEnter a casing convention you'd like to convert to. Currently supported are: \nsnake\nkebab\npascal\ncamel\n---------------------\n")
     found_choice = get_user_choice(entered_case_choice)
-    user_yes_no_to_found_choice = input(f"\n---------\nConverting to {found_choice} case. Continue? Y/N\n---------\n")
+    user_yes_no_to_found_choice = input(f"\n---------------------\nConverting to {found_choice} case. Continue? Y/N\n---------------------\n")
 
     if user_yes_no_to_found_choice.lower() == "y":
         user_made_choice = True
     else:
         pass
 
-variable_list = input("\n---------\nEnter a single string of variables delimited by whitespaces:\n---------\n")
+variable_list = input("\n---------------------\nEnter a single string of variables delimited by whitespaces:\n---------------------\n")
 result = (convert_case(found_choice, variable_list))
 
 if not result[1]:
-        print(f"{result[0]}")
-        if input("\n---------\nCopy non-ambiguous results to clipboard? Y/N\n---------\n").lower() == "y":
+        print(f"\nResult:\n\n---------------------\n{result[0]}\n---------------------\n")
+        if input("\nCopy results to clipboard? Y/N\n").lower() == "y":
             pyperclip.copy(result[0])
 else:
-        print(f"{result[0]}\n---------\nOne or more of your variables were ambiguous (couldn't resolve case):\n{result[1]}\n---------\n")
-        if input("---------\nCopy non-ambiguous results to clipboard? Y/N\n---------\n").lower() == "y":
+        print(f"\nResult:\n\n---------------------\n{result[0]}\n---------------------\n\nOne or more of your variables were ambiguous (couldn't resolve case):\n\n---------------------\n{result[1]}\n---------------------\n")
+        if input("\nCopy non-ambiguous results to clipboard? Y/N\n").lower() == "y":
             pyperclip.copy(result[0])
