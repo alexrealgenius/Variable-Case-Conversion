@@ -51,6 +51,8 @@ python case_converter.py
 
 <ol>
   <li><b>Enter the casing convention to convert <b><i>to.</i></b></b></li>
+  <sub>Implements a fuzzy search. You will be asked if the chosen case is correct before proceeding.</sub>
+  
   <h3>Example inputs:</h3>
   <ul>
     <li>"camel"</li>
