@@ -3,8 +3,9 @@
 <br>
 <br>
 <p1>This project converts a string of variables to a desired case convention.</p1>
-
-<i>Currently supports conversion to `snake_case`, `kebab-case`, `PascalCase`, and `camelCase`.</i>
+<br>
+<br>
+<i><p1>Currently supports conversion to `snake_case`, `kebab-case`, `PascalCase`, and `camelCase`.</i></p1>
 <br>
 <br>
 <br>
