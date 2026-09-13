@@ -37,9 +37,11 @@
     <li>"PascalCase &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AverageProfessors HiImAVariable"</li>
     <li>"snake_case CertainlyPascalCase"</li>
   </ul>
-</ol>
-  
 
+  <br>
+
+  <li><b>Optionally copy results to clipboard when prompted.</b></li>
+  </ol>
   
   <h2 align="center">Example Cases</h2>
     
@@ -74,4 +76,24 @@ CertainlyPascalCase</code></td>
   </tbody>
 </table>
 
+<hr>
+
+> [!WARNING]
+> Variable inputs whose casing cannot be determined will be considered "ambiguous".
+> <br>
+> This is why the program will prompt you to "Copy non-ambiguous results to clipboard" (successful matches).
+> <br>
+> <br>
+> The program will provide you of a list of ambiguous inputs if any are found.
+<br>
+<h1><b>Author</b></h1>
+
+[Alexander Troshin](https://github.com/alexrealgenius)
+
+[![GitHub](https://img.shields.io/badge/GitHub-alexrealgenius-181717?style=for-the-badge&logo=github)](https://github.com/alexrealgenius)
+
+
+
+
+<hr>
 
