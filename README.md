@@ -1,11 +1,20 @@
 <h1 align="center"> Variable Case Conversion</h1>
 
+
+
+
 <br>
 <br>
 <p1>This project converts a string of variables to a desired case convention.</p1>
 <br>
 <br>
-<i><p1>Currently supports conversion to `snake_case`, `kebab-case`, `PascalCase`, and `camelCase`.</i></p1>
+
+Currently supports conversion from `snake_case`, `kebab-case`, `PascalCase`, and `camelCase`.
+<br>
+<br>
+
+Currently supports conversion to `snake_case`, `kebab-case`, `PascalCase`, and `camelCase`.
+
 <br>
 <br>
 <br>
@@ -23,8 +32,8 @@
 
 <h2>Installation</h2>
 
-
-1. Clone the repo and move into the project folder
+<ol>
+<li>Clone the repo and move into the project folder</li>
 
 ```bash
 git clone https://github.com/alexrealgenius/Variable-Case-Conversion.git
@@ -32,25 +41,26 @@ cd Variable-Case-Conversion
 ```
 <hr>
 
-2. Install the required dependencies
+<li>Install the required dependencies</li>
 
 ```bash
 pip install rapidfuzz pyperclip
 ```
-if the above doesn't work, do:
+  If the above doesn't work, do:
 ```python
 py -m pip install rapidfuzz pyperclip
 ```
 <hr>
 
 
-3. Run the script
+<li>Run the script</li>
+
 
 ```python
 python case_converter.py
 ```
+</ol>
 <h2>Usage:</h2>
-
 <ol>
   <li><b>Enter the casing convention to convert <b><i>to.</i></b></b></li>
   <sub>Implements a fuzzy search. You will be asked if the chosen case is correct before proceeding.</sub>
@@ -58,8 +68,8 @@ python case_converter.py
   <h3>Example inputs:</h3>
   <ul>
     <li>"camel"</li>
+    <li>"snake"</li>
     <li>"pascal"</li>
-    <li>"kebab"</li>
   </ul>
 
 <br>
@@ -74,8 +84,9 @@ python case_converter.py
 
   <br>
 
-  <li><b>Optionally copy results to clipboard when prompted.</b></li>
   </ol>
+
+
   
   <h2 align="center">Example Cases</h2>
     
@@ -118,7 +129,7 @@ CertainlyPascalCase</code></td>
 > This is why the program will prompt you to "Copy non-ambiguous results to clipboard" (successful matches).
 > <br>
 > <br>
-> The program will provide you of a list of ambiguous inputs if any are found.
+> The program will provide a list of ambiguous inputs if any are found.
 <br>
 
 >[!TIP]
