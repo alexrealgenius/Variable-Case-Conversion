@@ -41,8 +41,9 @@ if the above doesn't work, do:
 ```python
 py -m pip install rapidfuzz pyperclip
 ```
-
 <hr>
+
+
 3. Run the script
 
 ```python
