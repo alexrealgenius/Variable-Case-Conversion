@@ -19,7 +19,7 @@
 
 1. Clone the repo and move into the project folder
 
-```
+```bash
 git clone https://github.com/alexrealgenius/Variable-Case-Conversion.git
 cd Variable-Case-Conversion
 ```
