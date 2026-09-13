@@ -15,8 +15,26 @@
 </ul>
 
 <h2>Installation</h2>
-<pre><code>pip install rapidfuzz</code></pre>
 
+
+1. Clone the repo and move into the project folder
+
+```
+git clone https://github.com/alexrealgenius/Variable-Case-Conversion.git
+cd Variable-Case-Conversion
+```
+
+2. Install the required dependencies
+
+```
+pip install rapidfuzz pyperclip
+```
+
+3. Run the script
+
+```
+python case_converter.py
+```
 <h2>Usage:</h2>
 
 <ol>
