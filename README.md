@@ -7,7 +7,7 @@
 <br>
 <br>
 
-<video src="assets/Python Case Converter Demo.mp4"></video>
+<video src="assets/PythonCaseConverterDemo.mp4" controls></video>
 
 
 
