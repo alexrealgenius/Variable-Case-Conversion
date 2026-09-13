@@ -26,20 +26,21 @@ git clone https://github.com/alexrealgenius/Variable-Case-Conversion.git
 cd Variable-Case-Conversion
 ```
 <hr>
+
 2. Install the required dependencies
 
-```
+```bash
 pip install rapidfuzz pyperclip
 ```
 if the above doesn't work, do:
-```
+```python
 py -m pip install rapidfuzz pyperclip
 ```
 
 <hr>
 3. Run the script
 
-```
+```python
 python case_converter.py
 ```
 <h2>Usage:</h2>
