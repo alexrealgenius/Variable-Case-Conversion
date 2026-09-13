@@ -9,11 +9,11 @@
 <br>
 <br>
 
-Currently supports conversion from `snake_case`, `kebab-case`, `PascalCase`, and `camelCase`.
+Currently supports conversion <b>from</b> `snake_case`, `kebab-case`, `PascalCase`, and `camelCase`.
 <br>
 <br>
 
-Currently supports conversion to `snake_case`, `kebab-case`, `PascalCase`, and `camelCase`.
+Currently supports conversion <b>to</b> `snake_case`, `kebab-case`, `PascalCase`, and `camelCase`.
 
 <br>
 <br>
