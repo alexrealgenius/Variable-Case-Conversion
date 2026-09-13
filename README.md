@@ -104,6 +104,11 @@ CertainlyPascalCase</code></td>
 > <br>
 > The program will provide you of a list of ambiguous inputs if any are found.
 <br>
+
+>[!TIP]
+> Text copied automatically to clipboard will be delimited by newlines between each word.
+
+<br>
 <h1><b>Author</b></h1>
 
 [Alexander Troshin](https://github.com/alexrealgenius)
